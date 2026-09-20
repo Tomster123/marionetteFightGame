@@ -1,0 +1,4 @@
+repository "marionetteFightGame/marionetteFightGame@2476037303678@cloud"
+  path "/"
+    br "/main"
+    co "/main"
