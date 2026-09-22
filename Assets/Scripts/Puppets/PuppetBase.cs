@@ -1,5 +1,6 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using System.Collections.Generic;
 
 [CreateAssetMenu(fileName = "Puppet", menuName = "Puppet/Create new Puppet")]
 
@@ -23,6 +24,8 @@ public class PuppetBase : ScriptableObject
     [SerializeField] int apAttack;
     [SerializeField] int apDefense;
     [SerializeField] int speed;
+
+    [SerializeField] List<Moves> learnableMoves;
 
     public string Name {
         get { return name; }
@@ -60,8 +63,26 @@ public class PuppetBase : ScriptableObject
     public int Speed {
         get { return speed; }
     }
-
+    public List<Moves> LearnableMoves {
+        get { return learnableMoves; }
+    }
 }
+
+[System.Serializable]
+public class Moves
+{
+    [SerializeField] MoveBase moveBase;
+    [SerializeField] int starLevel;
+
+    public MoveBase Base {
+        get { return moveBase; }
+    }
+
+    public int Level {
+        get { return starLevel; }
+    }
+}
+
 
 //Puppet Types and roles
 public enum PuppetType

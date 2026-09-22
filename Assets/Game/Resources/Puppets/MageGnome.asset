@@ -10,24 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 21fdf5a538d8af54ea334fa14732d253, type: 3}
-  m_Name: FighterGnome
+  m_Name: MageGnome
   m_EditorClassIdentifier: Assembly-CSharp::PuppetBase
-  name: FighterGnome
+  name: Mage Gnome
   description: 
   leftSprite: {fileID: 0}
   rightSprite: {fileID: 0}
   type1: 1
-  type2: 5
-  maxHp: 15
-  attack: 7
-  defense: 4
-  apAttack: 1
-  apDefense: 3
-  speed: 15
-  learnableMoves:
-  - moveBase: {fileID: 11400000, guid: 6713313770e981f40a319e925bb12c1d, type: 2}
-    starLevel: 1
-  - moveBase: {fileID: 11400000, guid: e25d1eaf6850b404ea4a4fe6eaa365de, type: 2}
-    starLevel: 2
-  - moveBase: {fileID: 0}
-    starLevel: 0
+  type2: 7
+  maxHp: 7
+  attack: 1
+  defense: 1
+  apAttack: 20
+  apDefense: 2
+  speed: 10
