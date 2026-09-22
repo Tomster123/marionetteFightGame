@@ -1,16 +1,15 @@
 using UnityEngine;
 
-public class Move : MonoBehaviour
+public class Move
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public MoveBase Base { get; set; }
+    public int Gems { get; set; }
+
+    public Move(MoveBase pBase, int gems)
     {
-        
+        this.Base = pBase;
+        this.Gems = gems;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }
