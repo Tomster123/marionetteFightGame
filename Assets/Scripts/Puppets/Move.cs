@@ -5,10 +5,10 @@ public class Move
     public MoveBase Base { get; set; }
     public int Gems { get; set; }
 
-    public Move(MoveBase pBase, int gems)
+    public Move(MoveBase pBase)
     {
         this.Base = pBase;
-        this.Gems = gems;
+        this.Gems = pBase.Gems;
     }
 
     
