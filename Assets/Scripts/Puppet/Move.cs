@@ -10,6 +10,4 @@ public class Move
         this.Base = pBase;
         this.Gems = pBase.Gems;
     }
-
-    
 }

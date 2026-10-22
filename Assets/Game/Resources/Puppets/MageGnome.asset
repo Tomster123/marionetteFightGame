@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PuppetBase
   name: Mage Gnome
   description: 
-  leftSprite: {fileID: 0}
+  leftSprite: {fileID: -1227905758629455560, guid: fa0c1fb465ca89441b33983ac0f627cf, type: 3}
   rightSprite: {fileID: 0}
   type1: 1
   type2: 7
@@ -24,3 +24,4 @@ MonoBehaviour:
   apAttack: 20
   apDefense: 2
   speed: 10
+  learnableMoves: []
