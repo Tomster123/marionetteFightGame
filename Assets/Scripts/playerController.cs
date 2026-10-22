@@ -86,6 +86,46 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        rb.velocity = input * moveSpeed;
+        rb.linearVelocity = input * moveSpeed;
+    }
+}
+//flashlight code 
+
+public class PlayerFlashlight : MonoBehaviour
+{
+    [Header("Flashlight Settings")]
+    public Light flashlight;
+    public KeyCode toggleKey = KeyCode.F;
+
+    [Header("Status")]
+    public bool hasFlashlight = false;
+
+    private bool flashlightOn = false;
+
+    void Start()
+    {
+        if (flashlight != null)
+        {
+            flashlight.enabled = false;
+        }
+    }
+
+    void Update()
+    {
+        if (!hasFlashlight)
+            return;
+
+        if (Input.GetKeyDown(toggleKey))
+        {
+            flashlightOn = !flashlightOn;
+            flashlight.enabled = flashlightOn;
+        }
+    }
+
+    public void PickUpFlashlight()
+    {
+        hasFlashlight = true;
+
+        Debug.Log("You found a flashlight! Press F to use it.");
     }
 }
